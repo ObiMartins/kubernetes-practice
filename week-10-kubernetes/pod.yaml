@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: first-nginx
+  labels:
+    app: first-nginx
+spec:
+  containers:
+    - name: nginx
+      image: nginx:latest
+      imagePullPolicy: IfNotPresent
+      ports:
+        - containerPort: 80
