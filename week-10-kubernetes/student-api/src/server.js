@@ -11,7 +11,8 @@ environment: process.env.APP_ENV || "local",
 
 //Page 4
 
-version: "1.0.0"
+version: "2.0.0",
+release: "week 12 rolling update"
 });
 });
 app.get("/health", (req, res) => {
